@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
       {/* Top Book Section */}
       <section className="px-4 md:px-8 lg:px-16 mt-8">
-        <TopBook />
+        {/* <TopBook /> */}
       </section>
 
       {/* Property Listings Section */}
