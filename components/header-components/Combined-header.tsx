@@ -1,8 +1,9 @@
 import { usePathname } from "next/navigation";
 import LowerHeader from "./components/Lower-header";
-import MiddleHeader from "./components/Middle-header";
+import MiddleHeader from "./components/responsiveMiddle-header/Desktop-Middle-header";
 import UpperHeader from "./components/Upper-header";
 import { useEffect, useState } from "react";
+import MobileMiddleHeader from "./components/responsiveMiddle-header/Mobile-middle-hader";
 
 const CombinedHeader: React.FC = () => {
     const pathname = usePathname();
@@ -22,7 +23,7 @@ const CombinedHeader: React.FC = () => {
       if (innerWindow == null) return null
 
       if (innerWindow <= 600) {
-        return <div>Mobile</div>;
+        return <MobileMiddleHeader/>;
       } else if (innerWindow < 1200) {
         return <div>Tablet</div>;
       } else {

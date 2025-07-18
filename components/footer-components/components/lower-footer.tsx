@@ -6,15 +6,15 @@ import LeftContent from "./footer-content/right-content";
 
 const LowerFooter: React.FC = () => {
     return (
-      <section className="flex flex-row h-[441px] bg-[#222222] pl-8 pr-8">
+      <section className="flex flex-row h-[797px] lg:h-[497px] bg-[#222222] pl-8 pr-8">
         <div className="flex flex-col gap-29">
-        <div className="flex flex-row gap-50 pt-6">
-            <LeftContent/>
-            <RightContent/>
-        </div>
+          <div className="flex flex-col lg:flex-row gap-[32px] lg:gap-50 pt-6">
+              <LeftContent/>
+              <RightContent/>
+          </div>
         <div className="flex flex-col justify-between">
             <HorizintalDevider/>
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-col lg:flex-row justify-between">
                 <LowestLeftContent/>
                 <LowestRightContent/>
             </div>

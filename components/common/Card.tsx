@@ -7,9 +7,9 @@ import Link from "next/link"
 const Card: React.FC = ({name, rating, category, price, image, offers, address}) => {
 
  return (
-    <div className="h-[422px] w-[378.56px] p-2 cursor-pointer hover:shadow-md hover:rounded-lg">
+    <div className="flex justify-center items-center h-[434px] w-[390.56px] lg:h-[422.37px] lg:w-[378.56px] lg:gap-[17.37px] p-2 cursor-pointer hover:shadow-md hover:rounded-lg">
       <Link href={`/property/${name}`}>
-      <Image className="rounded-lg" src={image} width={378.56} height={299.37} alt="house image" />
+      <Image className="flex justify-center rounded-lg items-center" src={image} width={520} height={362.37} alt="house image" />
       <div className="p-2 flex gap-2 mt-2">
         <Pill title={category[0]} />
         <Pill title={category[1]} />
