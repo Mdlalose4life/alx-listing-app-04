@@ -3,7 +3,7 @@ import HorizintalDevider from "../common/Dividers/Horizontal-devider";
 const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
     return (
       <div className="mb-4">
-        <h3 className="text-2xl font-semibold ">
+        <h3 className=" lg:text-2xl font-semibold px-[20px] lg:px-[40px]">
           <div className="flex gap-3 mb-16">
             <img
               src="/assets/star.svg"
@@ -12,7 +12,7 @@ const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
               <span className="text-[#6C6C6C]">( 345 reviews )</span>
           </div>
           </h3>
-          <div className="grid grid-cols-2 gap-4 max-w-[75%]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-[99%] lg:max-w-[75%] px-[20px] lg:px-[40px]">
             <div className="flex flex-col gap-4">
               <div className="flex flex-row">
                 <img  src="/assets/frame1.svg" alt="frame1" className="w-12 h-12 rounded-full mr-4" />
@@ -21,7 +21,7 @@ const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
                   <p className="text-[#6C6C6C]">3 years on ALX</p>
                 </div>
               </div>
-              <div>
+              <div className="font-semibold">
               December 2022 <span className="mx-1">•</span>
               <span className="text-[#6C6C6C]">family trip</span>
             </div>
@@ -36,7 +36,7 @@ const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
                 <p className="text-[#6C6C6C]" >1 years on ALX</p>
               </div>
             </div>
-            <div>
+            <div className="font-semibold">
               Februart 2001 <span className="mx-1">•</span>
               <span className="text-[#6C6C6C]">family trip</span>
             </div>
@@ -51,7 +51,7 @@ const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
                 <p className="text-[#6C6C6C]">7 months on ALX</p>
               </div>
             </div>
-            <div>
+            <div className="font-semibold">
               January 2023 <span className="mx-1">•</span>
               <span className="text-[#6C6C6C]">family trip</span>
             </div>
@@ -67,13 +67,13 @@ const ReviewSection: React.FC<{ reviews: any[] }> = ({ reviews }) => {
                     <p className="text-[#6C6C6C]">1 day on ALXs</p>
               </div>
             </div>
-            <div>
+            <div className="font-semibold">
               January 2023 <span className="mx-1">•</span>
               <span className="text-[#6C6C6C]">family trip</span>
             </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi deserunt esse nostrum eveniet exercitationem mollitia nemo dolorem corrupti eos laboriosam ex quos, odio suscipit blanditiis possimus aperiam aliquam quo.</p>
           </div>
-          <HorizintalDevider color="bg-[#E6E6E6]" weight="w-[1027.01px]"/>
+          <HorizintalDevider color="bg-[#E6E6E6]" weight=" w-[100%] lg:w-[1027.01px]"/>
         </div>
 
 

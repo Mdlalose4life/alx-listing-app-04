@@ -10,7 +10,7 @@ import HorizintalDevider from "../common/Dividers/Horizontal-devider";
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => {
   return (
-    <div className="container mx-auto">
+    <div className="container">
       <div>
         <PropertyDetailsHeader property={property}/>
       </div>
@@ -19,22 +19,22 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
         <PropertyServiceSumary/>
       </section>
       <div className="flex flex-row justify-between">
-        <div className="flex flex-col flex-1/2">
+        <div className="flex flex-col">
           <section>
             <PropatyDescription/>
           </section>
           <section>
-        <div className="flex flex-col">
-          <div className="mt-6">
-            <PropertyAmneties/>
-          </div>
-          <div className="py-16">
-            <ReviewSection/>
-          </div>
+            <div className="flex flex-col">
+              <div className="mt-6">
+                <PropertyAmneties/>
+              </div>
+              <div className="py-6">
+                <ReviewSection reviews={[]}/>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-        </div>
-        <section className="flex flex-1/2">
+        <section className="lg:flex hidden flex-1/2">
           <aside className="w-[535px]">
               <BookingSection price={0}/>
           </aside>

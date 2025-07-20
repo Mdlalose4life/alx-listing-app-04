@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       </div>
 
       <section className="px-4 md:px-8 lg:px-16 mt-8">
-        {/* <TopBook /> */}
+        <TopBook />
       </section>
 
       <section className="flex flex-col justify-center gap-10 px-4 md:px-8 lg:px-16 pt-8 pb-12">

@@ -2,7 +2,7 @@ import { GoDotFill } from "react-icons/go";
 
 const MobileMiddleHeader: React.FC = () => {
     return (
-    <div className="flex flex-row justify-between items-center px-[20px]">
+    <div className="flex flex-row justify-between items-center px-[20px] py-2">
         <div className="flex items-center justify-between border border-gray-300 rounded-full max-w-[90%] px-[20px] py-[10px]">
         <div className="flex flex-col">
             <div className="font-semibold">Where to</div>
