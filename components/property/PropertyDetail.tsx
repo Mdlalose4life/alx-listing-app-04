@@ -7,6 +7,7 @@ import PropertyAmneties from "./components/PropertyAmneties";
 import PropertyServiceSumary from "./components/PropertService";
 import PropertyDetailsHeader from "./components/PropertyDetailsHeader";
 import HorizintalDevider from "../common/Dividers/Horizontal-devider";
+import ReserveBox from "../booking/components/ReserveBox";
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => {
   return (
@@ -22,6 +23,9 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
         <div className="flex flex-col">
           <section>
             <PropatyDescription/>
+          </section>
+          <section>
+            <ReserveBox/>
           </section>
           <section>
             <div className="flex flex-col">

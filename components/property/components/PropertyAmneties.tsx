@@ -5,7 +5,7 @@ const PropertyAmneties: React.FC = () => {
     const [expanded, setExpanded] = useState(false)
     
     return (
-      <div className="flex flex-col w-[100%] lg:w-[700px]">
+      <div className="flex flex-col lg:w-[700px]">
         <div className="px-[20px] lg:px-[30px] mb-[49px]">
             <h2 className="text-sm lg:text-2xl font-semibold">What this place offers</h2>
             <p>Each home is fully equipped to meet your needs, with ample space and privacy.</p>
@@ -54,7 +54,7 @@ const PropertyAmneties: React.FC = () => {
                 </li>
             </ul>
         { !expanded && (<div 
-            className="flex justify-center border border-[#AEAEAE] py-[15px] px-[99px] rounded-[8px] lg:hidden"
+            className="flex flex-nowrap text-sm justify-center border border-[#AEAEAE] py-[15px] px-[99px] rounded-[8px] lg:hidden"
             onClick={() => setExpanded(true)}
             >
                 Show all Amenities
@@ -67,7 +67,7 @@ const PropertyAmneties: React.FC = () => {
             </li>
             ))}
         </ul> */}
-        <HorizintalDevider color="bg-[#E6E6E6]" weight="w-[429px] lg:w-[1027.01px]"/>
+        <HorizintalDevider color="bg-[#E6E6E6]" weight="w-full lg:w-[1027.01px]"/>
     </div>
     )
 }

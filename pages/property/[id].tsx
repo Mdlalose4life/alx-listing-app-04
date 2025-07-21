@@ -10,7 +10,7 @@ export default function PropertyPage() {
   if (!property) return <p>Property not found</p>;
 
   return (
-    <div>
+    <div className="flex justify-center">
       <PropertyDetail property={property} />
     </div>
   );

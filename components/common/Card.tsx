@@ -4,7 +4,27 @@ import React from "react"
 import Pill from "../layout/Pill"
 import Link from "next/link"
 
-const Card: React.FC = ({name, rating, category, price, image, offers, address}) => {
+interface CardProps {
+  name: string;
+  rating: number;
+  category: string[];
+  price: string | number;
+  image: string;
+  address: {
+    state: string;
+    country: string;
+  };
+  offers: {
+    bed: string;
+    bath: string; 
+    parking: string;
+    shower: string;
+    occupants?: string;
+}
+}
+
+
+const Card: React.FC<CardProps> = ({name, rating, category, price, image, offers, address}) => {
 
  return (
     <div className="flex justify-center items-center h-[434px] w-[330.56px] lg:h-[422.37px] lg:w-[378.56px] lg:gap-[17.37px] p-2 cursor-pointer hover:shadow-md hover:rounded-lg">

@@ -1,9 +1,10 @@
 import { usePathname } from "next/navigation";
 import LowerHeader from "./components/Lower-header";
-import MiddleHeader from "./components/responsiveMiddle-header/Desktop-Middle-header";
 import UpperHeader from "./components/Upper-header";
 import { useEffect, useState } from "react";
 import MobileMiddleHeader from "./components/responsiveMiddle-header/Mobile-middle-hader";
+import MiddleHeader from "./components/responsiveMiddle-header/Desktop-middle-header";
+import BookingHeader from "./components/Booking-header";
 
 const CombinedHeader: React.FC = () => {
     const pathname = usePathname();
@@ -33,9 +34,15 @@ const CombinedHeader: React.FC = () => {
 
     return (
       <div className='grid grid-row-3 top-0 w-full space-y-3 bg-white fixed'>
-          <UpperHeader/>
-          {renderResponsiveComponent()}
+          {pathname !== "/booking" && (
+            <>
+            <UpperHeader/>
+            {renderResponsiveComponent()}
+            </>
+          )}
           {pathname === "/" && <LowerHeader/>}
+          {pathname === "/booking" && <BookingHeader/> }
+
       </div>
     );
   };

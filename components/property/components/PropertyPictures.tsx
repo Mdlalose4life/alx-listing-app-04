@@ -11,13 +11,16 @@ const PropertyPictures: React.FC = () => {
             className="w-full h-full object-cover" 
             />
         </div>
-          <div className="flex items-center space-x-2 mt-2">
+        <div className='pt-[10px] pl-[10px]'>
+          <p className='font-semibold'>Naturel Red Apple</p>
+        </div>
+        <div className="flex items-center space-x-2 px-[10px] mt-2">
           <span className="text-yellow-500 flex items-center gap-2 py-2">
             <img 
             src="/assets/star.svg"
             alt="Rating_Star"/>
             4.6 stars</span>
-          <span className="flex items-center gap-2 py-2">
+          <span className="flex items-center gap-2 px-[15px] py-2">
           <img 
             src="/assets/map.svg"
             alt="Rating_Star"/>

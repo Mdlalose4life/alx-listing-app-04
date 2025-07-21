@@ -15,7 +15,7 @@ const PropatyDescription: React.FC = () => {
       <br/>
       <div className="flex flex-row px-[21px]">
         <div className=" flex flex-col gap-4">
-          <div className="w-[360px] lg:w-[1027px]">
+          <div className="w-full lg:w-[1027px]">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi possimus 
               fugiat doloremque quisquam, commodi exercitationem, aspernatur officiis tempore, repellendus aut! Optio modi consectetur, autem maxime dolore minus doloremque 
